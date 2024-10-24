@@ -125,6 +125,10 @@ nav li a{
 }
 
 .quemsomos__wrapper {
+    width: 100%;
+}
+
+.section__content {
     width: 80%;
     margin: auto;
     padding-top: 10rem;
@@ -134,7 +138,7 @@ nav li a{
 .quemsomos__textos {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 5rem;
 }
 
@@ -174,7 +178,7 @@ nav li a{
 
 .equipe__book img {
     width: 300px;
-    max-height: 400px;
+    max-height: 370px;
     object-fit: cover;
 }
 
