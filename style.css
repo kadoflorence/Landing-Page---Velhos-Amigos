@@ -284,7 +284,7 @@ footer p {
   h1,
   h2 {
     font-family: "League Gothic", serif;
-    font-size: 4rem;
+    font-size: 6rem;
     text-align: center;
     letter-spacing: 1px;
     padding-bottom: 10rem;
@@ -467,12 +467,19 @@ footer p {
 
   .servicos__wrapper {
     width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
+    gap: 10rem;
     justify-content: center;
-    padding-top: 10rem;
-    padding-bottom: 20rem;
+    padding: 0;
+  }
+
+  .servicos__wrapper h2 {
+    margin: 0;
+    padding: 0;
   }
 
   .servicos__table__cortes {
@@ -481,6 +488,7 @@ footer p {
     justify-content: center;
     width: 100vw;
     gap: 2rem;
+    height: 75rem;
   }
 
   .servicos__table__cortes img {
@@ -503,6 +511,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
+    height: 95rem;
   }
 
   .servicos__table__barba img {
