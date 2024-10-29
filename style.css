@@ -172,6 +172,7 @@ nav li a {
   flex-wrap: wrap;
   gap: 20px;
   flex-basis: 0;
+  align-self: flex-start;
 }
 
 .equipe__book img {
@@ -254,6 +255,10 @@ nav li a {
   font-style: normal;
 }
 
+.local__mapa button {
+  display: none;
+}
+
 footer {
   background-color: black;
   padding: 40px;
@@ -300,6 +305,10 @@ footer p {
     text-align: center;
   }
 
+  i[class="bx-fw bx bxs-map"] {
+    margin-right: 1rem;
+  }
+
   .header__wrapper {
     position: sticky;
     width: 100%;
@@ -445,7 +454,7 @@ footer p {
     justify-content: space-around;
     flex-wrap: wrap;
     flex-basis: 0;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
 
   .equipe__book img {
@@ -467,7 +476,7 @@ footer p {
 
   .servicos__wrapper {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -484,11 +493,12 @@ footer p {
 
   .servicos__table__cortes {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     width: 100vw;
     gap: 2rem;
-    height: 75rem;
+    height: auto;
   }
 
   .servicos__table__cortes img {
@@ -511,7 +521,7 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    height: 95rem;
+    height: auto;
   }
 
   .servicos__table__barba img {
@@ -552,8 +562,9 @@ footer p {
 
   .local__mapa {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 5rem;
   }
 
@@ -572,6 +583,15 @@ footer p {
     line-height: 2.5rem;
   }
 
+  .local__mapa button {
+    display: block;
+    margin: auto;
+    padding: 2rem;
+    border: none;
+    background-color: black;
+    color: white;
+  }
+
   footer {
     background-color: black;
     padding: 40px;
@@ -588,8 +608,6 @@ footer p {
 }
 
 @media (max-width: 1024px) {
-  /* Esta é a resolução para dispositivos com viewport até 1024px */
-
   * {
     margin: 0;
     padding: 0;
@@ -620,6 +638,10 @@ footer p {
     text-align: center;
   }
 
+  i[class="bx-fw bx bxs-map"] {
+    margin-right: 1rem;
+  }
+
   .header__wrapper {
     position: sticky;
     width: 100%;
@@ -750,7 +772,7 @@ footer p {
     width: 100%;
     margin: auto;
     padding-top: 1rem;
-    padding-bottom: 10rem;
+    padding-bottom: 1rem;
   }
 
   .equipe__detalhes {
@@ -765,7 +787,7 @@ footer p {
     justify-content: space-around;
     flex-wrap: wrap;
     flex-basis: 0;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
 
   .equipe__book img {
@@ -786,95 +808,27 @@ footer p {
   }
 
   .servicos__wrapper {
-    width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    margin: auto;
-    gap: 10rem;
-    justify-content: center;
-    padding: 0;
+    width: 95vw;
   }
 
   .servicos__wrapper h2 {
-    margin: 0;
-    padding: 0;
-  }
-
-  .servicos__table__cortes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100vw;
-    gap: 2rem;
-    height: 75rem;
-    padding-bottom: 165rem;
-  }
-
-  .servicos__table__cortes img {
-    width: 100vw;
-    padding-bottom: 2rem;
-  }
-
-  .servicos__table__cortes p {
-    font-size: 2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    text-align: center;
-    margin: auto;
-    width: 95vw;
-  }
-
-  .servicos__table__barba {
-    padding-top: 10rem;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 95rem;
-  }
-
-  .servicos__table__barba img {
-    width: 100vw;
-    order: -1;
-  }
-
-  .servicos__table__barba p {
-    font-size: 2rem;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    text-align: center;
-    margin: auto;
-    width: 95vw;
-  }
-
-  .service__corte {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .service__barba {
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .equipe__texto {
     margin: auto;
   }
 
   .contato__wrapper {
     width: 100vw;
     margin: auto;
-    padding-top: 100rem;
-    padding-bottom: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
   }
 
   .local__mapa {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 5rem;
   }
 
@@ -891,6 +845,15 @@ footer p {
     margin: auto;
     text-align: center;
     line-height: 2.5rem;
+  }
+
+  .local__mapa button {
+    display: block;
+    margin: auto;
+    padding: 2rem;
+    border: none;
+    background-color: black;
+    color: white;
   }
 
   footer {
