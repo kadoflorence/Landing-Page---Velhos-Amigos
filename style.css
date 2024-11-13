@@ -24,11 +24,16 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "League Gothic", serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .header__wrapper {
@@ -1377,6 +1382,7 @@ footer p {
   }
 
   .equipe__book {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
